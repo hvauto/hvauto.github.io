@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+<style type="text/css">html,
+body {
+  background: #89B582;
+}
+
+.birthday {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 10em;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+}
+.birthday span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.current {
+  position: relative;
+}
+.current span:nth-child(2) {
+  -webkit-animation: hide 1s 1.5s ease forwards;
+          animation: hide 1s 1.5s ease forwards;
+}
+.current:after {
+  position: absolute;
+  left: 5px;
+  content: "Years";
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.frontend {
+  position: relative;
+  left: 70px;
+  -webkit-animation: move 1.75s 1s ease forwards;
+          animation: move 1.75s 1s ease forwards;
+}
+.frontend:after {
+  position: absolute;
+  left: -85px;
+  content: "Days of Beautiful Girl :))";
+  font-size: 30px;
+  opacity: 0.5;
+  white-space: nowrap;
+  -webkit-animation: hide 1.5s 1s ease forwards;
+          animation: hide 1.5s 1s ease forwards;
+}
+
+
+.current,
+.frontend,
+.plus {
+  display: inline-block;
+}
+
+.plus {
+  -webkit-animation: hide 1.3s 1s ease forwards;
+          animation: hide 1.3s 1s ease forwards;
+}
+
+@-webkit-keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes show {
+  to {
+    opacity: 1;
+    top: 40px;
+  }
+}
+@keyframes show {
+  to {
+    opacity: 1;
+    top: 40px;
+  }
+}
+@-webkit-keyframes f-left {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1;
+  }
+}
+@keyframes f-left {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes f-right {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+@keyframes f-right {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes move {
+  to {
+    left: -250px;
+  }
+}
+@keyframes move {
+  to {
+    left: -250px;
+  }
+}
+@-webkit-keyframes cake {
+  to {
+    font-size: 28em;
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+@keyframes cake {
+  to {
+    font-size: 28em;
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+.final {
+  position: absolute;
+  font-size: 58px;
+  left: 48%;
+  top: -10px;
+  line-height: 1.3;
+  opacity: 0;
+  -webkit-animation: show 1.5s 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+          animation: show 1.5s 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+.final span {
+  display: block;
+}
+
+.fa-birthday-cake {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0);
+  -webkit-animation: cake 1s 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+          animation: cake 1s 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+</style>
+    
+    
+  </head>
+
+  <body>
+    <div class="birthday">
+  <div class="current">
+    <span>1</span><span>7</span>
+  </div>
+  <span class="plus">to</span>
+  <div class="frontend">
+    <span class="frontend-text">8</span>
+  </div>
+  <div class="final">Happy <span>Birthday Trang :))</span></div>
+</div>
+<span class="fa fa-birthday-cake"></span>
+    
+    <script type="text/javascript" src="snowstorm.js"></script>
+	<script type="text/javascript">
+	snowStorm.snowColor = '#99ccff'; // màu của tuyết
+	snowStorm.flakesMaxActive = 96;  // số lượng tuyết rơi cùng 1 lúc
+	snowStorm.useTwinkleEffect = true; // cho tuyết nhấp nháy
+	</script>  
+    
+    
+  </body>
+</html>
