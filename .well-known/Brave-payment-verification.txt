@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: hvauto.github.io
+Token: b5135e5b27b03ee247e782f60ae5eeeafe25a16b0cb654a6a1e08546a15cec7f
