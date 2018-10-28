@@ -1,0 +1,17 @@
+https://github.com/radareorg/cutter/releases
+
+lord_ EasyCrackme2
+
+for in in (QTBXCTU) ^ 0x21 ( là 33 ) so sánh với pass
+
+nếu đúng thì --> great you did it !!!
+
+Giải :
+
+a = 'QTBXCTU'
+for i in a :
+	b = (ord(i)^33)
+	print(chr(b))
+
+
+==> pucybut
