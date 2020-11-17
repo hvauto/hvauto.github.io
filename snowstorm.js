@@ -5,6 +5,7 @@
  * Copyright (c) 2007, Scott Schiller. All rights reserved.
  * Code provided under the BSD License:
  * http://schillmania.com/projects/snowstorm/license.txt
+ * cung kih khung day
  */
 
 /*global window, document, navigator, clearInterval, setInterval */
