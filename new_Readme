@@ -1,0 +1,37 @@
+-jnf
+
+theory$ gdb -q mycrk
+Using host libthread_db library "/lib/tls/libthread_db.so.1".
+(gdb) disass main
+Dump of assembler code for function main:
+[...]
+0x080483db <main+23>:   movl   $0x5b1270,0xfffffff8(%ebp)
+[...]
+0x080483fc <main+56>:   lea    0xfffffff4(%ebp),%eax
+0x080483ff <main+59>:   push   %eax                   
+[...]
+0x08048405 <main+65>:   call   0x80482c4 <scanf@plt>
+[...]
+0x0804840d <main+73>:   mov    0xfffffff8(%ebp),%eax
+0x08048410 <main+76>:   cmp    0xfffffff4(%ebp),%eax
+0x08048413 <main+79>:   jne    0x8048432 <main+110>
+[...]
+0x08048432 <main+110>:  sub    $0xc,%esp
+0x08048435 <main+113>:  push   $0x8048529
+0x0804843a <main+118>:  call   0x80482e4 <printf@plt>
+End of assembler dump.
+(gdb) x/s 0x8048529
+0x8048529 <_IO_stdin_used+25>:   "wrong!\n"
+(gdb) shell
+theory$ printf "%d\n" 0x5b1270
+5968496
+theory$ exit
+exit
+(gdb) r
+Starting program: /home/jnf/mycrk 
+Type cd-key: 5968496
+73313
+
+Program exited normally.
+(gdb) q
+
